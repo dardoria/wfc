@@ -1,0 +1,27 @@
+# Zig build artifacts
+zig-cache/
+zig-out/
+/release/
+/debug/
+/build/
+
+# Binary files
+*.exe
+*.pdb
+*.obj
+*.o
+
+# Editor specific files
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
