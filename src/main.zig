@@ -1,5 +1,6 @@
 const std = @import("std");
 const m = @import("model.zig");
+const builtin = @import("builtin");
 
 pub fn main() !void {
     var gpa = std.heap.GeneralPurposeAllocator(.{}){};
@@ -10,8 +11,4 @@ pub fn main() !void {
     defer model.deinit();
 
     std.debug.print("Model created successfully\n", .{});
-}
-
-test "basic test" {
-    try std.testing.expectEqual(10, 3 + 7);
 }
